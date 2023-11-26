@@ -1,9 +1,13 @@
 
-import './App.css';
+import './components/sass/style.scss';
+import InfoSection from './components/InfoSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
+      <InfoSection/>
+      <Footer/>
         
     </div>
   );
