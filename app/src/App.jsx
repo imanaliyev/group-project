@@ -1,24 +1,32 @@
 
-import './App.css';
+
 import Car from './components/Car';
 import Categories from './components/Categories';
-import "./components/sass/malik.scss"
+
 import Savemoney from './components/Savemoney';
-import './components/sass/style.scss';
+
+
 import InfoSection from './components/InfoSection';
 import Footer from './components/Footer';
+import Our from './components/Our/Our';
+
 
 function App() {
   return (
     <div className="App">
-        <Savemoney></Savemoney>
-        <Categories></Categories>
-        <Car></Car>
+      <Car/>
+      <Categories/>
+      
+      <Savemoney/>
+      <Our/>
       <InfoSection/>
       <Footer/>
+      
         
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
+
