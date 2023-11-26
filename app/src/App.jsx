@@ -1,5 +1,5 @@
 
-import './components/sass/style.scss';
+import './components/sass/imanStyle.scss';
 import InfoSection from './components/InfoSection';
 import Footer from './components/Footer';
 
