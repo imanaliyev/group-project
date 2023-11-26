@@ -2,7 +2,7 @@
 import './App.css';
 import Car from './components/Car';
 import Categories from './components/Categories';
-import "./components/sass/style.scss"
+import "./components/sass/malik.scss"
 import Savemoney from './components/Savemoney';
 
 function App() {
