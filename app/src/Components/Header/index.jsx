@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../../Sass/arif.scss";
 import LogoImg from "../../Assets/Images/icon2.png";
 import SideImg from "../../Assets/Images/svg-image.png";
 
