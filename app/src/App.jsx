@@ -1,3 +1,5 @@
+import React from 'react'
+import Our from './components/Our'
 
 
 import Car from './components/Car';
@@ -11,14 +13,17 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-        <Savemoney></Savemoney>
-        <Categories></Categories>
-        <Car></Car>
-      <InfoSection/>
-      <Footer/>
-        
+      <Our />
+      <Savemoney></Savemoney>
+      <Categories></Categories>
+      <Car></Car>
+      <InfoSection />
+      <Footer />
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
+
