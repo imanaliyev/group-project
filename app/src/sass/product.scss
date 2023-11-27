@@ -19,6 +19,55 @@
         display: grid;
         grid-template-columns: auto auto auto auto;
         gap: 10px;
+        a{
+            transition: 1s;
+            
+            .sticy {
+                width: 80px;
+                height: 110px;
+                background-color: rgba(209, 209, 209, 0.336);
+                position: fixed;
+                bottom: 60px;
+                right: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 10;
+    
+                i {
+                    font-size: 30px;
+                    position: absolute;
+                    transition: 0.4s;
+                    z-index: 9;
+                    color: #0c0c0c;
+                }
+    
+                .arrow {
+                    width: 80px;
+                    height: 10px;
+                    background-color: #ff4d24;
+                    position: absolute;
+                    bottom: 0px;
+                    transition: 1s;
+    
+                }
+    
+                &:hover {
+                    .arrow {
+                        height: 110px;
+                    }
+    
+                    i {
+                        transform: translateY(-10px);
+                        color: white;
+                    }
+    
+                }
+    
+    
+            }
+        }
+        
 
         .card {
             position: relative;
@@ -155,49 +204,7 @@
 
             }
 
-            .sticy {
-                width: 80px;
-                height: 110px;
-                background-color: rgba(209, 209, 209, 0.9);
-                position: fixed;
-                bottom: 60px;
-                right: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                z-index: 10;
-
-                i {
-                    font-size: 30px;
-                    position: absolute;
-                    transition: 0.4s;
-                    z-index: 9;
-                }
-
-                .arrow {
-                    width: 80px;
-                    height: 10px;
-                    background-color: #ff4d24;
-                    position: absolute;
-                    bottom: 0px;
-                    transition: 1s;
-
-                }
-
-                &:hover {
-                    .arrow {
-                        height: 110px;
-                    }
-
-                    i {
-                        transform: translateY(-10px);
-                        color: white;
-                    }
-
-                }
-
-
-            }
+            
 
         }
     }
@@ -407,4 +414,19 @@
         }
     }
 
+}
+@media only screen and (max-width: 440px){
+    .umumi #four .writes .translate{
+        font-size: 70px;
+    }
+    .umumi #three .card{
+        max-width: fit-content;
+        .top{
+            display: none;
+        }
+        .bottom{
+            display: none;
+        }
+    }
+    
 }

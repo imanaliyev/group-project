@@ -7,7 +7,7 @@ import Savemoney from './components/Savemoney';
 import './components/sass/imanStyle.scss';
 import InfoSection from './components/InfoSection';
 import Footer from './components/Footer';
-import "./components/sass/arif.scss";
+import "./sass/arif.scss";
 import Header from "./components/Header"
 import Main from "./components/Main"
 

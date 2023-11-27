@@ -42,12 +42,19 @@ const Our = () => {
 
                         <div className="bottom"></div>
                         {/* positon fixed( sagdaki) */}
-                        <div className="sticy">
-                            <i class="fa-solid fa-arrow-up"></i>
-                            <div className="arrow"></div>
-                        </div>
+                       
                     </div>
+                     
+                    
                 ))}
+                <a href="/
+                ">
+                     <div className="sticy">
+                     <i class="fa-solid fa-arrow-up"></i>
+                     <div className="arrow"></div>
+                    </div>
+                </a>
+               
             </section>
 
 
