@@ -1,9 +1,9 @@
 
 
 import React from "react";
-import Image1 from "./Images/shop-home-img-4.jpg";
-import Image2 from "./Images/shop-home-img-5.jpg";
-
+import Image1 from "../../Assets/Images/shop-home-img-4.jpg";
+import Image2 from "../../Assets/Images/shop-home-img-5.jpg";
+import Image3 from "../../Assets/Images/shop-home-img-99.jpg"
 
 
 function Main() {
@@ -32,13 +32,22 @@ function Main() {
             <div className="ceg-card1-img">
               <img src={Image1} />
             </div>
+            <div className="orangedot-main-top">
+            </div>
+            <div className="orangedot-main-bottom">
+            </div>
             <div className="ceg-title">
               <h3>CARS</h3>
             </div>
+
           </div>
           <div className="ceg-card2">
             <div className="ceg-card2-img">
               <img src={Image2} />
+            </div>
+            <div className="orangedot-main-top">
+            </div>
+            <div className="orangedot-main-bottom">
             </div>
             <div className="ceg-title">
               <h3>ELECTRONICAL</h3>
@@ -46,10 +55,14 @@ function Main() {
           </div>
           <div className="ceg-card3">
             <div className="ceg-card3-img">
-              <img src={Image1} />
+              <img src={Image3} />
+            </div>
+            <div className="orangedot-main-top">
+            </div>
+            <div className="orangedot-main-bottom">
             </div>
             <div className="ceg-title">
-              <h3>ELECTRONICAL</h3>
+              <h3>GADGETS</h3>
             </div>
           </div>
         </div>

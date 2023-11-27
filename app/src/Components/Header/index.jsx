@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../Sass/arif.scss";
-import LogoImg from "./Images/icon2.png";
-import SideImg from "./Images/svg-image.png";
+import LogoImg from "../../Assets/Images/icon2.png";
+import SideImg from "../../Assets/Images/svg-image.png";
 
 function Header() {
   const [Sidebar, setSidebar] = useState(false);
@@ -37,32 +37,31 @@ function Header() {
             </div>
           </div>
           <div className={`nav-menu-sidebar ${Sidebar ? "open" : ""}`}>
-            
             <div className="sidebar-content-wrapper">
-            <div className="sidebar-logo">
-              <img src={SideImg} />
-            </div>
-            <div className="sidebar-content1">
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                et tortor ac sem varius tincidunt non ac eros.
-              </span>
-            </div>
-            <div className="sidebar-content2">
-              <span>Support Center</span>
+              <div className="sidebar-logo">
+                <img src={SideImg} />
+              </div>
+              <div className="sidebar-content1">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean et tortor ac sem varius tincidunt non ac eros.
+                </span>
+              </div>
+              <div className="sidebar-content2">
+                <span>Support Center</span>
 
-              <h3>+ 3 759 315 - 6427</h3>
-            </div>
-            <div className="sidebar-content3">
-              <span>Our Address</span>
-              <h4>94 ROA MALAKA, WEST JAKARTA CITY</h4>
-            </div>
+                <h3>+ 3 759 315 - 6427</h3>
+              </div>
+              <div className="sidebar-content3">
+                <span>Our Address</span>
+                <h4>94 ROA MALAKA, WEST JAKARTA CITY</h4>
+              </div>
             </div>
             <div className="sidebar-socials">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-telegram"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-telegram"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-github"></i>
             </div>
           </div>
           {Sidebar && <div className="overlay" onClick={SidebarOpen}></div>}
@@ -70,6 +69,9 @@ function Header() {
       </header>
 
       <div className="Navigation">
+        <div className="response-logo">
+          <img src="../../Assets/Images/response-logo.png" />
+        </div>
         <div className="nav-btns">
           <ul>
             <li className="main-btn">
@@ -80,7 +82,6 @@ function Header() {
                     <div className="highlight-dot"></div>MAIN HOME
                   </li>
                   <li>
-                    
                     <div className="highlight-dot"></div>CAR PARTS SHOP
                   </li>
                   <li>
@@ -140,28 +141,62 @@ function Header() {
               </div>
             </li>
 
-            <li className="main-btn">PORTFOLIO
-            <div className="main-btn-dropdown">
+            <li className="portfolio-btn">
+              PORTFOLIO
+              <div className="portfolio-btn-dropdown">
                 <ul>
                   <li>
-                    <div className="highlight-dot"></div>1
+                    {/* <h3>LIST TYPES</h3> */}
+                    <div className="highlight-dot"></div>Standart
                   </li>
                   <li>
-                    <div className="highlight-dot"></div>2
+                    <div className="highlight-dot"></div>Gallery
                   </li>
                   <li>
-                    <div className="highlight-dot"></div>3
+                    <div className="highlight-dot"></div>Slider
+                  </li>
+                </ul>
+
+                <ul>
+                  {/* <h3>SINGLE TYPES</h3> */}
+                  <li>
+                    <div className="highlight-dot"></div>Small Images
                   </li>
                   <li>
-                    <div className="highlight-dot"></div>4
+                    <div className="highlight-dot"></div>Big Images
                   </li>
-                  
+                  <li>
+                    <div className="highlight-dot"></div>Small Slider
+                  </li>
+                  <li>
+                    <div className="highlight-dot"></div>Big Slider
+                  </li>
+                </ul>
+
+                <ul>
+                  {/* <h3>LAYOUTS</h3> */}
+                  <li>
+                    <div className="highlight-dot"></div>Two Columns
+                  </li>
+                  <li>
+                    <div className="highlight-dot"></div>Three Columns
+                  </li>
+                  <li>
+                    <div className="highlight-dot"></div>Three Columns Wide
+                  </li>
+                  <li>
+                    <div className="highlight-dot"></div>Four Columns
+                  </li>
+                  <li>
+                    <div className="highlight-dot"></div>Four Columns Wide
+                  </li>
                 </ul>
               </div>
             </li>
 
-            <li className="main-btn">BLOG
-            <div className="main-btn-dropdown">
+            <li className="main-btn">
+              BLOG
+              <div className="main-btn-dropdown">
                 <ul>
                   <li>
                     <div className="highlight-dot"></div>LEFT SIDEBAR
@@ -175,12 +210,12 @@ function Header() {
                   <li>
                     <div className="highlight-dot"></div>POSTTYPES
                   </li>
-                  
                 </ul>
               </div>
             </li>
-            <li className="main-btn">SHOP
-            <div className="main-btn-dropdown">
+            <li className="main-btn">
+              SHOP
+              <div className="main-btn-dropdown">
                 <ul>
                   <li>
                     <div className="highlight-dot"></div>LEFT SIDEBAR
@@ -194,13 +229,16 @@ function Header() {
                   <li>
                     <div className="highlight-dot"></div>SHOP PAGES
                   </li>
-                  
                 </ul>
               </div>
             </li>
           </ul>
         </div>
+        <div className="response-menu">
+            <i class="fa-solid fa-bars" onClick={SidebarOpen}></i>
+          </div>
         <div className="nav-contact">
+          
           <span>Support center 24/7</span>
           <h3>+ 3 759 315 - 6427</h3>
         </div>
