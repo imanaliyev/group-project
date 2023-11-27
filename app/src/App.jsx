@@ -1,10 +1,10 @@
 
-import './App.css';
+
 import Car from './components/Car';
 import Categories from './components/Categories';
 import "./components/sass/malik.scss"
 import Savemoney from './components/Savemoney';
-import './components/sass/style.scss';
+import './components/sass/imanStyle.scss';
 import InfoSection from './components/InfoSection';
 import Footer from './components/Footer';
 
